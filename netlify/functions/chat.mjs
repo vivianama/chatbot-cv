@@ -1,7 +1,8 @@
 import { PERFIL } from "../../perfil.mjs";
 
-const MAX_CHARS = 500; // largo máximo por mensaje
-const MAX_TURNS = 10;  // mensajes de historial que se envían
+const MAX_CHARS = 500;    // largo máximo por mensaje
+const MAX_TURNS = 10;     // mensajes de historial que se envían
+const TIMEOUT_MS = 12000; // espera máxima por intento a Gemini
 
 const SYSTEM_PROMPT = `Sos el asistente virtual de Viviana (Viv). Ayudás a personas de RRHH y reclutadores a conocer su perfil profesional.
 
@@ -24,11 +25,18 @@ const json = (obj, status = 200) =>
 
 async function callGemini(body, model, apiKey) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
-  return fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
-    body: JSON.stringify(body),
-  });
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
+  try {
+    return await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
+      body: JSON.stringify(body),
+      signal: controller.signal,
+    });
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 export default async (req) => {
@@ -64,7 +72,11 @@ export default async (req) => {
   const body = {
     systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
     contents: messages.map((m) => ({ role: m.role, parts: [{ text: m.text }] })),
-    generationConfig: { temperature: 0.3, maxOutputTokens: 600 },
+    generationConfig: {
+      temperature: 0.3,
+      maxOutputTokens: 800,
+      thinkingConfig: { thinkingLevel: "low" },
+    },
   };
 
   try {
@@ -95,10 +107,15 @@ export default async (req) => {
       .trim();
 
     if (!reply) {
+      console.error("Respuesta vacía de Gemini:", JSON.stringify(data).slice(0, 500));
       return json({ reply: "No pude generar una respuesta. ¿Podés reformular la pregunta?" });
     }
     return json({ reply });
   } catch (err) {
+    if (err.name === "AbortError") {
+      console.error("Timeout: Gemini no respondió en", TIMEOUT_MS, "ms");
+      return json({ reply: "Estoy tardando más de lo normal. Probá de nuevo en un momento." }, 504);
+    }
     console.error("Error inesperado:", err);
     return json({ reply: "Tuve un problema técnico. Probá de nuevo en unos minutos." }, 500);
   }

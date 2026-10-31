@@ -19,15 +19,15 @@ Entre 1991 y 2005 fue profesora de música en colegios privados y estatales.
 - Cursó hasta 4.º año de la Licenciatura en Sistemas en la Universidad de Morón (no la concluyó).
 - Profesorado en Educación Musical, Conservatorio Provincial de Música de Morón (2000).
 - Tecnicatura en Ciencia de Datos e Inteligencia Artificial, IFTS 18 (en curso).
-- 2026: Machine Learning (TalentoTech), terminado.
-- 2026: Gemini Enterprise Agent Ready - GEAR (Google Cloud, a través de TalentoTech), terminado.
-- 2026: Diplomatura Data Science (Digital House), terminada.
-- 2026: Diplomatura Data Analyst (Digital House), terminada.
-- 2025: Introducción a Machine Learning (Digital House), terminado.
-- 2022: Diplomatura FullStack (Digital House), terminada.
+- 2026: Machine Learning (TalentoTech), obtenida.
+- 2026: Gemini Enterprise Agent Ready - GEAR (Google Cloud, a través de TalentoTech), obtenida.
+- 2026: Diplomatura Data Science (Digital House), obtenida.
+- 2026: Diplomatura Data Analyst (Digital House), obtenida.
+- 2025: Introducción a Machine Learning (Digital House), obtenida.
+- 2022: Diplomatura FullStack (Digital House), obtenida.
 - 2020: Agile Grand Coach (UTN), terminado.
-- 2020: Professional Scrum Master (Scrum.org), terminado.
-- 2019: Certificación PMP (Project Management Institute), terminada.
+- 2020: Professional Scrum Master (Scrum.org), obtenida.
+- 2019: Certificación PMP (Project Management Institute), obtenida.
 Tiene otras capacitaciones que puede compartir si resultan de interés.
 
 ## Hobbies e intereses

@@ -31,9 +31,9 @@ Entre 1991 y 2005 fue profesora de música en colegios privados y estatales.
 Tiene otras capacitaciones que puede compartir si resultan de interés.
 
 ## Hobbies e intereses
-- Bordado: borda y está armando una presencia en Instagram para mostrar sus trabajos.
-- Soga (jump rope freestyle): le interesa y estuvo averiguando clases en Buenos Aires.
-- Música: es profesora de música (Profesorado en Educación Musical, 2000) y dio clases durante 14 años.
+- Deporte: corre carreras de calle y de montaña, y todos los sábados patina en rollers con grupos de amigos.
+- Música: es profesora de música (Profesorado en Educación Musical, 2000) y fue docente durante 14 años. Toca el piano y participó en varios coros.
+- Viajes: le gusta viajar a lugares en contacto con la naturaleza, practicar deportes al aire libre, conocer nuevas culturas y visitar lugares de aprendizaje.
 
 ## Datos personales
 - Vive en Núñez, Ciudad Autónoma de Buenos Aires, Argentina.

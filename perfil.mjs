@@ -13,11 +13,11 @@ Viviana Acevedo es Project Manager con más de 20 años en tecnología. Empezó 
 - Abr 2007 - Oct 2008 | Sistran S.A. | Analista Funcional.
 - Mar 2006 - Mar 2007 | Tecnosofware S.A. | Developer Java.
 - Sep 2005 - Feb 2006 | Cubika S.A. | Analista Funcional.
-Entre 1991 y 2005 fue profesora de música en colegios privados y estatales.
+Entre 1991 y 2005 fue profesora de música en colegios privados y estatales. Empezó a dar clases mientras estudiaba el Profesorado en Educación Musical, que completó en 2000.
 
 ## Formación y cursos
 - Cursó hasta 4.º año de la Licenciatura en Sistemas en la Universidad de Morón (no la concluyó).
-- Profesorado en Educación Musical, Conservatorio Provincial de Música de Morón (2000).
+- Profesorado en Educación Musical, Conservatorio Provincial de Música de Morón (egresó en 2000; empezó a trabajar como docente mientras estudiaba).
 - Tecnicatura en Ciencia de Datos e Inteligencia Artificial, IFTS 18 (en curso).
 - 2026: Machine Learning (TalentoTech), obtenida.
 - 2026: Gemini Enterprise Agent Ready - GEAR (Google Cloud, a través de TalentoTech), obtenida.

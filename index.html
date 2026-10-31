@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Preguntale al asistente de Viv</title>
+  <title>Preguntale al asistente de Vivi</title>
   <style>
     * { box-sizing: border-box; }
     body { margin: 0; font-family: system-ui, sans-serif; background: #f4f5f7; color: #1f2937; }
@@ -23,14 +23,14 @@
 </head>
 <body>
   <div class="app">
-    <h1>Preguntale al asistente de Viv</h1>
+    <h1>Preguntale al asistente de Vivi</h1>
     <p class="sub">Experiencia, formación, habilidades y trayectoria. Respondo solo con información de su perfil.</p>
     <div id="chat"></div>
     <form id="form">
       <input id="input" maxlength="500" placeholder="Ej: ¿Qué experiencia tiene en gestión de proyectos?" autocomplete="off" />
       <button id="send" type="submit">Enviar</button>
     </form>
-    <div class="note">Asistente con IA: puede equivocarse. Ante la duda, contactá a Viv directamente.</div>
+    <div class="note">Asistente con IA: puede equivocarse. Ante la duda, contactá a Vivi directamente.</div>
   </div>
 
   <script>
@@ -49,7 +49,7 @@
       return div;
     }
 
-    addMessage("model", "¡Hola! Soy el asistente de Viv. Preguntame sobre su experiencia, formación o trayectoria.");
+    addMessage("model", "¡Hola! Soy el asistente de Vivi. Preguntame sobre su experiencia, formación o trayectoria.");
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
